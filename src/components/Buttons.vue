@@ -21,3 +21,11 @@ export default {
   },
 };
 </script>
+
+<style>
+button {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+</style>
