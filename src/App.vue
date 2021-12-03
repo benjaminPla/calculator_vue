@@ -1,15 +1,17 @@
 <template>
   <div class='app'>
+    <screen />
     <keyboard />
   </div>
 </template>
 
 <script>
+import Screen from './components/Screen.vue';
 import Keyboard from './components/Keyboard.vue';
 
 export default {
   name: 'App',
-  components: { Keyboard },
+  components: { Screen, Keyboard },
 };
 </script>
 
