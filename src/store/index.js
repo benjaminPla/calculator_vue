@@ -2,12 +2,15 @@ import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    calc: 'asd',
-    result: 'dsa',
+    calc: '',
+    result: '',
   },
   /* eslint-disable */
   mutations: {
-    resetCalc: (state) => state.calc = '',
+    reset: (state) => {
+      state.calc = '';
+      state.result = '';
+    },
     setCalc: (state, payload) => state.calc += payload,
     setResult: (state, payload) => state.result += payload,
   },

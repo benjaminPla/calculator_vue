@@ -1,14 +1,17 @@
 <template>
   <div class='container'>
-    <button v-for='(key, index) in keys' :key='index'>{{ key }}</button>
+    <buttons v-for='(key, index) in keys' :key='index' :data='key'/>
   </div>
 </template>
 
 <script>
+import Buttons from './Buttons.vue';
+
 export default {
   name: 'Keyboard',
+  components: { Buttons },
   setup() {
-    const keys = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '=', '+', '-', '*', '/'];
+    const keys = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '=', '+', '-', '*', '/', 'AC'];
     return { keys };
   },
 };
@@ -21,10 +24,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  background: $red;
   padding: 5px;
-  border-radius: 10px;
-  border: 5px solid #000;
   button {
     border: 5px solid #000;
     border-radius: 10px;

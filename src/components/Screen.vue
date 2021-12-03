@@ -27,6 +27,7 @@ export default {
   background-color: $green;
   border-radius: 10px;
   border: 5px solid #000;
+  height: 60px;
   p {
     text-align: right;
     margin: 0;

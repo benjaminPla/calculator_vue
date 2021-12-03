@@ -31,6 +31,10 @@ a:active {
   color: inherit;
 }
 .app {
-  padding: 0 35%;
+  margin: 0 35%;
+  background: $red;
+  padding: 5px;
+  border-radius: 10px;
+  border: 5px solid #000;
 }
 </style>
