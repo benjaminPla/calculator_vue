@@ -39,6 +39,11 @@ button {
   font-family: 'Fuzzy Bubbles', cursive;
   font-weight: 700;
   font-size: 1.4rem;
+  transition: 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .calc {
   background: linear-gradient(to left, $yellow 90%, #eee 10%);

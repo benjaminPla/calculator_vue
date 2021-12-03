@@ -3,19 +3,21 @@
     <screen />
     <keyboard />
   </div>
+  <footer-bar />
 </template>
 
 <script>
 import Screen from './components/Screen.vue';
 import Keyboard from './components/Keyboard.vue';
+import FooterBar from './components/FooterBar.vue';
 
 export default {
   name: 'App',
-  components: { Screen, Keyboard },
+  components: { Screen, Keyboard, FooterBar },
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import './assets/variables';
 
 * {
@@ -31,7 +33,7 @@ a:active {
   color: inherit;
 }
 .app {
-  margin: 0 35%;
+  margin: 60px 35% 0 35%;
   background: $red;
   padding: 5px;
   border-radius: 10px;
