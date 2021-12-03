@@ -12,7 +12,7 @@ export default createStore({
       state.result = '';
     },
     setCalc: (state, payload) => state.calc += payload,
-    setResult: (state, payload) => state.result += payload,
+    setResult: (state) => state.result = eval(state.calc),
   },
   /* eslint-enable */
 });

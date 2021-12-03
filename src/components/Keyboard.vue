@@ -11,7 +11,24 @@ export default {
   name: 'Keyboard',
   components: { Buttons },
   setup() {
-    const keys = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '=', '+', '-', '*', '/', 'AC'];
+    const keys = [
+      { value: 9, type: 'numb' },
+      { value: 8, type: 'numb' },
+      { value: 7, type: 'numb' },
+      { value: '/', type: 'calc' },
+      { value: 6, type: 'numb' },
+      { value: 5, type: 'numb' },
+      { value: 4, type: 'numb' },
+      { value: '*', type: 'calc' },
+      { value: 3, type: 'numb' },
+      { value: 2, type: 'numb' },
+      { value: 1, type: 'numb' },
+      { value: '-', type: 'calc' },
+      { value: 'AC', type: 'calc' },
+      { value: 0, type: 'numb' },
+      { value: '=', type: 'calc' },
+      { value: '+', type: 'calc' },
+    ];
     return { keys };
   },
 };
@@ -25,11 +42,5 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
   padding: 5px;
-  button {
-    border: 5px solid #000;
-    border-radius: 10px;
-    height: 40px;
-    background: linear-gradient(to left, #fff 90%, #eee 10%);
-  }
 }
 </style>
